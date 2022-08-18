@@ -61,7 +61,7 @@ class Parser:
 				self.line_number += 1
 
 	def instructionType(self):
-		# compare current line with regex expressions
+		# compare current line with regular expressions
 		A_match = re.match(Parser.patterns[Parser.A_INSTRUCTION], self.current_line) 
 		L_match = re.match(Parser.patterns[Parser.L_INSTRUCTION], self.current_line)
 
